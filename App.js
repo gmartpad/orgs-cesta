@@ -5,7 +5,8 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text>App react de teste!</Text>
+      <Text style={styles.hotReloading}>Ao mudar o texto aqui, o app automaticamente atualiza no dispositivo através do hot reloading!</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -18,4 +19,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  hotReloading: {
+    padding: 20
+  }
 });
