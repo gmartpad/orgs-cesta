@@ -9,6 +9,8 @@ import {
 
 import Cesta from './src/telas/Cesta'
 
+import mockCesta from './src/mocks/cesta'
+
 export default function App() {
 
   const [fonteCarregada] = useFonts({
@@ -23,7 +25,7 @@ export default function App() {
   return (
     <SafeAreaView>
       <StatusBar/>
-      <Cesta/>
+      <Cesta {...mockCesta} />
     </SafeAreaView>
   );
 }
